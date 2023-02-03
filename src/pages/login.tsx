@@ -1,12 +1,12 @@
-import { SimpleGrid } from "@chakra-ui/react";
-import { LoginRightContainer } from "src/uikit/containers/login/LoginRightContainer";
+import Head from "next/head";
+import { AuthLayout } from "src/uikit/components/AuthLayout";
+import { LoginContainer } from "src/uikit/containers/LoginContainer";
 
 const LoginPage = () => {
   return (
-    <SimpleGrid columns={2} minChildWidth="50%">
-      <h1>Hehe</h1>
-      <LoginRightContainer />
-    </SimpleGrid>
+    <AuthLayout head="Log in to FRIS">
+      <LoginContainer />
+    </AuthLayout>
   );
 };
 

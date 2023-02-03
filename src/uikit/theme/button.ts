@@ -1,6 +1,9 @@
 import { defineStyleConfig } from "@chakra-ui/react";
 
 export const Button = defineStyleConfig({
+  baseStyle: {
+    borderRadius: "sm",
+  },
   variants: {
     black: {
       bg: "black",

@@ -27,7 +27,12 @@ export const InputField = ({
   return (
     <FormControl isInvalid={isInvalid} {...props.formControlProps}>
       {label && (
-        <FormLabel htmlFor={name} {...props.formLabelProps} fontSize="0.75rem">
+        <FormLabel
+          htmlFor={name}
+          {...props.formLabelProps}
+          fontSize="0.75rem"
+          color="gray.10"
+        >
           {label}
         </FormLabel>
       )}

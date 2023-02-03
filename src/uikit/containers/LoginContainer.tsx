@@ -9,6 +9,7 @@ import {
   Text,
   SimpleGrid,
   Icon,
+  Box,
 } from "@chakra-ui/react";
 import { Input } from "src/uikit/components/form/Input";
 import { InputField } from "src/uikit/components/form/InputField";
@@ -42,7 +43,7 @@ const buttons = [
   },
 ];
 
-export const LoginRightContainer = () => {
+export const LoginContainer = () => {
   const {
     handleSubmit,
     register,
@@ -58,7 +59,10 @@ export const LoginRightContainer = () => {
   return (
     <Center w="100%" h="100vh">
       <Flex direction="column" gap="1rem" w="50%">
-        <Heading>FRIS</Heading>
+        <VStack mt="-10rem !important" mb="5rem" align="start" spacing={0}>
+          <Heading>FRIS</Heading>
+          <Text fontSize="0.85rem">For your HR needs.</Text>
+        </VStack>
         <Heading size="md">Log In</Heading>
 
         {/* Login Form */}
@@ -109,8 +113,8 @@ export const LoginRightContainer = () => {
             >
               <Checkbox
                 {...register("keepLoggedIn")}
-                borderColor="gray"
-                colorScheme="blackAlpha"
+                borderColor="gray.50"
+                colorScheme="gray"
               >
                 Keep me logged in
               </Checkbox>
@@ -122,7 +126,12 @@ export const LoginRightContainer = () => {
         </form>
 
         {/* Forgot Password */}
-        <Link textDecoration="underline" alignSelf="end" fontSize="0.85rem">
+        <Link
+          href="forgot-password"
+          textDecoration="underline"
+          alignSelf="end"
+          fontSize="0.85rem"
+        >
           Forgot your password?
         </Link>
 
