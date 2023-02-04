@@ -15,7 +15,7 @@ export const Input = forwardRef(
         _active={{ outline: "none" }}
         _hover={{ outline: "none" }}
         _focusVisible={{ outline: "none" }}
-        _placeholder={{ color: "gray" }}
+        _placeholder={{ color: "gray", fontSize: "0.85rem" }}
         bg="white.0"
         borderRadius="sm"
         {...props}

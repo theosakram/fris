@@ -1,6 +1,5 @@
-import Head from "next/head";
 import { AuthLayout } from "src/uikit/components/AuthLayout";
-import { LoginContainer } from "src/uikit/containers/LoginContainer";
+import { LoginContainer } from "src/uikit/containers/login/LoginContainer";
 
 const LoginPage = () => {
   return (
